@@ -45,9 +45,14 @@ const director2: Director = {
 };
 console.log(director1);
 interface printTeacherFunction {
-  (lastName: string, firstName: string): string;
+  (firstName: string, lastName: string): string;
 }
-function printTeacher(lastName: string, firstName: string) {
-  return `${firstName} ${lastName}`;
-}
-console.log(printTeacher('slaimi', 'omar'));
+
+const printTeacher: printTeacherFunction = (
+    firstName: string, 
+    lastName: string
+): string => {
+    return `${firstName}. ${lastName}`;
+};
+
+console.log(printTeacher("John", "Doe"));

@@ -31,7 +31,7 @@ var director2 = {
     contract: false,
 };
 console.log(director1);
-function printTeacher(lastName, firstName) {
+var printTeacher = function (firstName, lastName) {
     return firstName + " " + lastName;
-}
-console.log(printTeacher('slaimi', 'omar'));
+};
+console.log(printTeacher("John", "Doe"));
