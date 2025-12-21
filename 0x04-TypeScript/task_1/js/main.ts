@@ -1,7 +1,7 @@
 interface Teacher {
-  firstName: string;
+  readonly firstName: string;
   fullTimeEmployee: boolean;
-  lastName: string;
+  readonly lastName: string;
   location: string;
   contract: boolean;
 }
