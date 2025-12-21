@@ -40,6 +40,8 @@ var StudentClass = /** @class */ (function () {
     function StudentClass(firstName, lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.lastName = lastName;
+        this.firstName = firstName;
     }
     StudentClass.prototype.workOnHomework = function () {
         return "Currently working";

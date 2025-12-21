@@ -65,7 +65,10 @@ interface StudentClassInterface {
     displayName(): string;
 }
 class StudentClass {
-  constructor( public firstName: string, public lastName: string ) {}
+  constructor( public firstName: string, public lastName: string ) {
+    this.lastName = lastName;
+    this.firstName = firstName;
+  }
   workOnHomework(): string {
         return "Currently working";
     }
