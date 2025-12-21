@@ -24,11 +24,10 @@ const teacher2: Teacher = {
 };
 
 console.log(teacher1);
-
-interface Directors extends Teacher {
+interface Director extends Teacher {
   numberOfReports: number;
 }
-const director1: Directors = {
+const director1: Director = {
   firstName: 'John',
   lastName: 'Doe',
   location: 'London',
@@ -36,7 +35,7 @@ const director1: Directors = {
   numberOfReports: 17,
   contract: true,
 };
-const director2: Directors = {
+const director2: Director = {
   firstName: 'david',
   lastName: 'miller',
   location: 'New York',
