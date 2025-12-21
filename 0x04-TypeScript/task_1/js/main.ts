@@ -4,6 +4,8 @@ interface Teacher {
   readonly lastName: string;
   location: string;
   contract: boolean;
+  yearsOfExperience?: number;
+  [propName: string]: any;
 }
 
 const teacher1: Teacher = {
