@@ -56,3 +56,21 @@ function printTeacher(
     return `${firstName}. ${lastName}`;
 }
 console.log(printTeacher({ firstName: 'John', lastName: 'Doe' }));
+
+
+
+
+interface StudentClassInterface {
+    workOnHomework(): string;
+    displayName(): string;
+}
+class StudentClass {
+  constructor( public firstName: string, public lastName: string ) {}
+  workOnHomework(): string {
+        return "Currently working";
+    }
+
+    displayName(): string {
+        return this.firstName;
+    }
+  }
