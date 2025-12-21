@@ -43,5 +43,11 @@ const director2: Director = {
   numberOfReports: 7,
   contract: false,
 };
-
 console.log(director1);
+interface printTeacherFunction {
+  (lastName: string, firstName: string): string;
+}
+function printTeacher(lastName: string, firstName: string) {
+  return `${firstName} ${lastName}`;
+}
+console.log(printTeacher('slaimi', 'omar'));
