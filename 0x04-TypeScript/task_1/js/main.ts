@@ -77,3 +77,4 @@ class StudentClass {
         return this.firstName;
     }
   }
+  console.log(new StudentClass('Omar', 'Slaimi').displayName());

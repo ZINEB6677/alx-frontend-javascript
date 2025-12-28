@@ -1,12 +1,13 @@
 "use strict";
-var teacher1 = {
+Object.defineProperty(exports, "__esModule", { value: true });
+const teacher1 = {
     firstName: 'omar',
     fullTimeEmployee: true,
     lastName: 'slaimi',
     location: 'los angeles',
     contract: true,
 };
-var teacher2 = {
+const teacher2 = {
     firstName: 'Jana',
     fullTimeEmployee: false,
     lastName: 'hilton',
@@ -14,7 +15,7 @@ var teacher2 = {
     contract: true,
 };
 console.log(teacher1);
-var director1 = {
+const director1 = {
     firstName: 'John',
     lastName: 'Doe',
     location: 'London',
@@ -22,7 +23,7 @@ var director1 = {
     numberOfReports: 17,
     contract: true,
 };
-var director2 = {
+const director2 = {
     firstName: 'david',
     lastName: 'miller',
     location: 'New York',
@@ -31,23 +32,24 @@ var director2 = {
     contract: false,
 };
 console.log(director1);
-function printTeacher(_a) {
-    var firstName = _a.firstName, lastName = _a.lastName;
-    return firstName + ". " + lastName;
+function printTeacher({ firstName, lastName }) {
+    return `${firstName}. ${lastName}`;
 }
 console.log(printTeacher({ firstName: 'John', lastName: 'Doe' }));
-var StudentClass = /** @class */ (function () {
-    function StudentClass(firstName, lastName) {
+class StudentClass {
+    firstName;
+    lastName;
+    constructor(firstName, lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.lastName = lastName;
         this.firstName = firstName;
     }
-    StudentClass.prototype.workOnHomework = function () {
+    workOnHomework() {
         return "Currently working";
-    };
-    StudentClass.prototype.displayName = function () {
+    }
+    displayName() {
         return this.firstName;
-    };
-    return StudentClass;
-}());
+    }
+}
+//# sourceMappingURL=main.js.map

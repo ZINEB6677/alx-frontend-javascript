@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ZINEB6677/alx-frontend-javascript#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^5.6.5",
     "typescript": "^5.9.3"
   }
 }
