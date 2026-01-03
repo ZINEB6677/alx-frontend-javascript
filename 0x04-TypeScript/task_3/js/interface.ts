@@ -1,5 +1,5 @@
-export type rowID = number;   
-export interface rowElement {
+export type RowID = number;
+export interface RowElement {
     firstName: string;
     lastName: string;
     age?: number;
